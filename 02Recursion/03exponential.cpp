@@ -5,7 +5,7 @@ typedef  unsigned long long ll;
 
 ll modf(ll x,ll y){
     if(y==0) return 1;
-    else if(y==0) return x;
+    else if(y==1) return x;
     else{
         ll r = modf(x,y/2);
         if(y%2==0) return r*r;
